@@ -1,9 +1,19 @@
 import torch
-import torch.nn as nn
+from torch import nn
+from torch.nn import functional as F
+
+
+def brightness_head(channels):
+    head = nn.Conv1d(channels, 2, 1)
+    # Preserve the initialization sequence used for pixel sampling.
+    for _ in range(2):
+        nn.Conv1d(channels, 2, 1)
+    nn.init.zeros_(head.weight)
+    nn.init.zeros_(head.bias)
+    return head
 
 
 class ColumnBackbone(nn.Module):
-    # simple 1d cnn to grab column context
     def __init__(self, F, C=48):
         super().__init__()
         self.conv1 = nn.Conv1d(F, C, 5, padding=2)
@@ -14,18 +24,33 @@ class ColumnBackbone(nn.Module):
         return self.act(self.conv2(self.act(self.conv1(x))))
 
 
-class Heads(nn.Module):
-    # output heads for the three branches: Y, HSV, and Lab
-    def __init__(self, C, out_per_head=2):
+class ColorBranch(nn.Module):
+    def __init__(self):
         super().__init__()
-        self.y_head = nn.Conv1d(C, out_per_head, 1)
-        self.hs_head = nn.Conv1d(C, out_per_head, 1)
-        self.ab_head = nn.Conv1d(C, out_per_head, 1)
+        self.backbone = nn.Sequential(
+            nn.Conv1d(8, 48, 5, padding=2, padding_mode="replicate"),
+            nn.ReLU(),
+            nn.Conv1d(48, 48, 5, padding=2, padding_mode="replicate"),
+            nn.ReLU(),
+        )
+        self.head = nn.Conv1d(48, 4, 1)
+        nn.init.zeros_(self.head.weight)
+        nn.init.zeros_(self.head.bias)
 
-        # init with zeros so it doesn't jump around at the start of training
-        for m in [self.y_head, self.hs_head, self.ab_head]:
-            nn.init.zeros_(m.weight)
-            nn.init.zeros_(m.bias)
-
-    def forward(self, h):
-        return self.y_head(h), self.hs_head(h), self.ab_head(h)
+    def forward(self, features, gate):
+        small = F.interpolate(features, size=32, mode="linear", align_corners=True)
+        raw = self.head(self.backbone(small))
+        full = F.interpolate(
+            raw.unsqueeze(2), size=(1, features.shape[-1]), mode="bicubic", align_corners=True
+        )[0, :, 0].T
+        bounded = torch.tanh(full) * gate[:, None]
+        fields = torch.stack(
+            [
+                torch.exp(0.7 * bounded[:, 0]),
+                (10 / 360) * bounded[:, 1],
+                32 * bounded[:, 2],
+                32 * bounded[:, 3],
+            ],
+            1,
+        )
+        return fields, bounded

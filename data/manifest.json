@@ -1,0 +1,172 @@
+[
+  {
+    "image_id": "HC145_5_1",
+    "cohort": "synthetic_test",
+    "mother_id": "HC145_5",
+    "input": "data/synthetic/HC145_5_1.png",
+    "reference": "data/synthetic/label/HC145_5_1.png",
+    "input_sha256": "a29b6fc7d4d96d415a07be787345f7f9074ae3335c34417cbac49e06036eb1fc",
+    "reference_sha256": "dbf50796ba9e34568776e26a03e6d3ae2d2708d7bc309757a4e7dee86149eb25"
+  },
+  {
+    "image_id": "HC145_5_2",
+    "cohort": "synthetic_test",
+    "mother_id": "HC145_5",
+    "input": "data/synthetic/HC145_5_2.png",
+    "reference": "data/synthetic/label/HC145_5_2.png",
+    "input_sha256": "915350322eb58b21482d28d20817fda95809206cc7c613827cd52296012361d1",
+    "reference_sha256": "e0b90eedde09ab40f352d4c0073d5f92174cd3f786302e072c4a7b2e6680d74f"
+  },
+  {
+    "image_id": "HC145_5_3",
+    "cohort": "synthetic_test",
+    "mother_id": "HC145_5",
+    "input": "data/synthetic/HC145_5_3.png",
+    "reference": "data/synthetic/label/HC145_5_3.png",
+    "input_sha256": "36e185ec5fb6474a1ed4ba7d4fc74c3720eabd2db8f93ef6b21834f569ab0390",
+    "reference_sha256": "8cfe29d9c886fdafdd194844eb2835b14ab4f9417f836faef862f35f5fb7f227"
+  },
+  {
+    "image_id": "HC146_4_1",
+    "cohort": "synthetic_test",
+    "mother_id": "HC146_4",
+    "input": "data/synthetic/HC146_4_1.png",
+    "reference": "data/synthetic/label/HC146_4_1.png",
+    "input_sha256": "e7952bfffb1d3592b9ebb807fa44b6e40afb3d75735c0222706055d1f136abf1",
+    "reference_sha256": "916e5d54a1eb2f9e5345aa94718a13562ca4f44e981fdfd32b06a764392cda98"
+  },
+  {
+    "image_id": "HC146_4_2",
+    "cohort": "synthetic_test",
+    "mother_id": "HC146_4",
+    "input": "data/synthetic/HC146_4_2.png",
+    "reference": "data/synthetic/label/HC146_4_2.png",
+    "input_sha256": "fc6d534a679c462e3555773e974acc27054db8c59ccbb75765f285971cdbb9f2",
+    "reference_sha256": "9af79ab26d782698eaa0a05f8535f9562c119746b8bf8345c11e8a55431739e3"
+  },
+  {
+    "image_id": "HC146_4_3",
+    "cohort": "synthetic_test",
+    "mother_id": "HC146_4",
+    "input": "data/synthetic/HC146_4_3.png",
+    "reference": "data/synthetic/label/HC146_4_3.png",
+    "input_sha256": "7c4bb4951daf118501307703de803199185efaaf40d729d6c098dcc75daaa0d2",
+    "reference_sha256": "7b3fa8bdf2e4e6d53d02b7e74f57102f36aa50d839b165b95afa33d41ecdecb1"
+  },
+  {
+    "image_id": "HC149_1_1",
+    "cohort": "synthetic_test",
+    "mother_id": "HC149_1",
+    "input": "data/synthetic/HC149_1_1.png",
+    "reference": "data/synthetic/label/HC149_1_1.png",
+    "input_sha256": "f9dc0dc35005c7fcdd9ee07cdeabaef27ef38912063c0778c6b8fa022a71b1a1",
+    "reference_sha256": "96e56b49c73a41762929609218ab7c371b82b247ca3fd1517cde5dacd84fdd36"
+  },
+  {
+    "image_id": "HC149_1_2",
+    "cohort": "synthetic_test",
+    "mother_id": "HC149_1",
+    "input": "data/synthetic/HC149_1_2.png",
+    "reference": "data/synthetic/label/HC149_1_2.png",
+    "input_sha256": "92d06ef56cc8b48035d7dbdd33e3930628721c87db2d9c0c0be201f2582f6c64",
+    "reference_sha256": "b9d0b098bbd98147b200fc8912a517ebcffa272c62c8b5be269c26c10f36d498"
+  },
+  {
+    "image_id": "HC149_1_3",
+    "cohort": "synthetic_test",
+    "mother_id": "HC149_1",
+    "input": "data/synthetic/HC149_1_3.png",
+    "reference": "data/synthetic/label/HC149_1_3.png",
+    "input_sha256": "387e877778f355e4bb6559aab455b16c2393cf9876d2716345ba30a888731075",
+    "reference_sha256": "32ddc87d775a4d01832f120c541647aa8c9725dd0e4304123f5fdb869176b622"
+  },
+  {
+    "image_id": "HC155_4_1",
+    "cohort": "synthetic_test",
+    "mother_id": "HC155_4",
+    "input": "data/synthetic/HC155_4_1.png",
+    "reference": "data/synthetic/label/HC155_4_1.png",
+    "input_sha256": "fcd934e3ce5e8416a70e634cdcbb07c68c2efa6ebee0506719071101f9b91aad",
+    "reference_sha256": "ac05445c10fbadd319473440a5e08130ed6bdc3bf39c3d47dc84d6e2e12f4db7"
+  },
+  {
+    "image_id": "HC155_4_2",
+    "cohort": "synthetic_test",
+    "mother_id": "HC155_4",
+    "input": "data/synthetic/HC155_4_2.png",
+    "reference": "data/synthetic/label/HC155_4_2.png",
+    "input_sha256": "5667a1d31288c8c06f73aa2344640ad378ddb27831dff37afba040689a4675e2",
+    "reference_sha256": "38069b5ac854aea0a2db614099215100c69df8cbc7b1be5c55a4974db404efba"
+  },
+  {
+    "image_id": "HC155_4_3",
+    "cohort": "synthetic_test",
+    "mother_id": "HC155_4",
+    "input": "data/synthetic/HC155_4_3.png",
+    "reference": "data/synthetic/label/HC155_4_3.png",
+    "input_sha256": "53fbef307f68aff21784084977ae8d4fd52ae7bb8ef9d372c7af94bea1134313",
+    "reference_sha256": "b7ba22d286b8bdeb3618d063f4b26e3db2b24421942e12dd385b17769b4af7c5"
+  },
+  {
+    "image_id": "HC240_1_1",
+    "cohort": "synthetic_test",
+    "mother_id": "HC240_1",
+    "input": "data/synthetic/HC240_1_1.png",
+    "reference": "data/synthetic/label/HC240_1_1.png",
+    "input_sha256": "ed1f46019fa12325e1800209321ad145f7b888f5ab3a1d79828cd4b5cd232a8e",
+    "reference_sha256": "21709333053ed3750d8a7630a6405b0e039230bfcc4eebcd8bb2e4deaf4916fc"
+  },
+  {
+    "image_id": "HC240_1_2",
+    "cohort": "synthetic_test",
+    "mother_id": "HC240_1",
+    "input": "data/synthetic/HC240_1_2.png",
+    "reference": "data/synthetic/label/HC240_1_2.png",
+    "input_sha256": "4d1d73a297bd14e6bf75a1b628ddef2cc6b870d4868a98b04db8a035e2dfe8b0",
+    "reference_sha256": "cdca4bb28c478f2f6bfe15bf547c4faa32c5120c4032b1651885d5e038299cf8"
+  },
+  {
+    "image_id": "HC240_1_3",
+    "cohort": "synthetic_test",
+    "mother_id": "HC240_1",
+    "input": "data/synthetic/HC240_1_3.png",
+    "reference": "data/synthetic/label/HC240_1_3.png",
+    "input_sha256": "8c56b4a22ca6518d114122810d5ef909184f6b50bb770de323c9045e8f164ac3",
+    "reference_sha256": "3d2f4e946159df0a3e910848af2febdf154117ef1680a090dd60f701a6a3ae5c"
+  },
+  {
+    "image_id": "HC145_5",
+    "cohort": "real_representative",
+    "mother_id": "HC145_5",
+    "input": "data/real_cores/HC145_5.JPG",
+    "input_sha256": "ba4fc81b5306b4bbad3a32a9e4539ca2fec7c805eda997d4fd787ce181404bae"
+  },
+  {
+    "image_id": "HC146_4",
+    "cohort": "real_representative",
+    "mother_id": "HC146_4",
+    "input": "data/real_cores/HC146_4.JPG",
+    "input_sha256": "fa15b7d1a0f6b3b8dbe3da3d056106a2e4067c44dcc4cc2fab589a63bf9c4225"
+  },
+  {
+    "image_id": "HC149_1",
+    "cohort": "real_representative",
+    "mother_id": "HC149_1",
+    "input": "data/real_cores/HC149_1.JPG",
+    "input_sha256": "6b58a94351f132a5bb68be220593490de13dce99d5ebc5f752a8c637df002e67"
+  },
+  {
+    "image_id": "HC155_4",
+    "cohort": "real_representative",
+    "mother_id": "HC155_4",
+    "input": "data/real_cores/HC155_4.JPG",
+    "input_sha256": "e2becf976e534f5631fea92c4bfc2df981fe43f083e6ef433099c4baa4bd28c1"
+  },
+  {
+    "image_id": "HC240_1",
+    "cohort": "real_representative",
+    "mother_id": "HC240_1",
+    "input": "data/real_cores/HC240_1.JPG",
+    "input_sha256": "5f44ff0a48362ba2e5360d50702eed1120ab89ffa23569f972456043779ab0ee"
+  }
+]
